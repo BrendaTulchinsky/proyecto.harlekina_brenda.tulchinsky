@@ -13,13 +13,13 @@
         <p class="anuncio_envio_gratis bg-dark text-white text-center fs-5">
             ENVIO GRATIS EN COMPRAS MAYORES A $5000 EN GRAN BSAS
         </p>
-        <nav class="navbar navbar-expand-lg w-100 h-100 d-flex mb-5 align-items-center" >
+        <nav class="navbar navbar-expand-lg w-100 h-100 d-flex mb-2 align-items-center" >
             <div class="container-fluid h-100 d-flex ">
               <a class="navbar-brand h-50 pt-2 logo" href="../index.html"><img src="../media/logos/logo_negro.png" alt="Logo de Harlekina"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse d-flex align-items-center" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-50 d-flex justify-content-start ">
                   <li class="nav-item px-4">
                     <a class="nav-link" href="productos.html">Productos</a>
@@ -33,10 +33,10 @@
                 </ul>
                 <form class="d-flex align-items-center justify-content-start" role="search" >
                     <img src="../media/iconos/buscar_icono.png" alt="Imagen de lupa" >
-                    <input class="form-control me-2 d-flex align-items-center ms-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <input class="form-control me-2 d-flex align-items-center ms-2 w-25" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn" type="submit" ><img src="../media/iconos/flecha.buscar_icono.png" alt="Aceptar búsqueda" class="boton_buscar"></button>
                 </form>
-                <ul class="navbar-nav mb-2 mb-lg-0 d-flex nav_ul d-flex justify-content-evenly">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex nav_ul d-flex justify-content-evenly flex-row">
                     <li>
                         <a href="perfil.html" class="d-flex align-items-center">
                             <img src="../media/iconos/usuario_icono.png" alt="Ingresar con tu usuario" class="perfil">
@@ -103,41 +103,106 @@
         </section> -->
     </header>
     <main>
-        
-            <nav class="productos d-flex w-25 h-50">
+            <nav class="productos d-flex w-25 h-50 ms-4 pt-5">
                 <a href="../index.html">Inicio</a>
                 <img src="../media/iconos/flecha.buscar_icono.png" alt="">
                 <a href="productos.html">Productos</a>
             </nav>
-            <div class="categorias d-flex">
-                <div class="d-flex flex-column">
+            <div class="categorias d-flex mt-5 mb-5 flex-lg-row flex-column">
+                <div class="d-flex flex-column text-center ">
                     <a href="#fotos_botas"><img src="../media/categorias/botas_icono.png" alt="Imagen de categoría botas"></a>
                     <a href="#fotos_botas">BOTAS</a>
                 </div>
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column text-center">
                     <a href="#fotos_borcegos"><img src="../media/categorias/borcegos_icono.png" alt="Imagen de categoría borcegos"></a>
                     <a href="#fotos_borcegos">BORCEGOS</a>
                 </div>
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column text-center">
                     <a href="#fotos_zapatos"><img src="../media/categorias/zapatos_icono.png" alt="Imagen de categoría zapatos"></a>
                     <a href="#fotos_zapatos">ZAPATOS</a>
                 </div>
             </div>
-        <nav class="filtros_orden">
-            <img src="../media/iconos/ordenar_icono.png" alt="Icono de ordenar">
-            <h3>ORDENAR</h3>
-            <img src="../media/iconos/filtrar_icono.png" alt="Icono de filtros">
-            <h3>FILTROS</h3>
+            <h1 class="d-flex w-25 h-50 ms-4 pt-5" >Productos</h1>
+        <nav class="filtros_orden d-flex justify-content-between w-100">
+            <div class="d-flex px-5 align-items-center gap-3" >
+                <img src="../media/iconos/ordenar_icono.png" alt="Icono de ordenar" class="object-fit-contain">
+                <h3>ORDENAR</h3>
+            </div>
+            <div class="d-flex px-5 align-items-center gap-3">
+                <img src="../media/iconos/filtrar_icono.png" alt="Icono de filtros" class="object-fit-contain">
+                <h3>FILTROS</h3>
+            </div>
         </nav>
-        <section class="productos_fotos">
-            <div class="fotos_borcegos" id="fotos_borcegos">
-                <img src="../media/productos/borcego_1.jpg" alt="Imagen Borcegos">
+        <section class="container text-center gap-4">
+            <!-- <div class="fotos_borcegos d-flex" id="fotos_borcegos"> -->
+                <div class="row gap-4 py-3 flex-lg-row flex-column">
+                    <div class="col">
+                        <div class="card ">
+                            <img src="../media/productos/borcego_1.jpg" class="card-img-top" alt="Imagen Borcegos">
+                            <div class="card-body">
+                             <h4 class="card-title fs-3">Carrie</h4>
+                            <p class="card-text fs-5">$9.500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 ">
+                            <img src="../media/productos/borcego_2.jpg" alt="Imagen Borcegos" class="card-img-top">
+                            <div class="card-body fs-3">
+                             <h4 class="card-title">Annie</h4>
+                            <p class="card-text fs-5">$8.500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 ">
+                            <img src="../media/productos/botas_1.jpg" alt="Imagen Botas" class="card-img-top">
+                            <div class="card-body">
+                             <h4 class="card-title fs-3">Scott</h4>
+                            <p class="card-text fs-5">$9.500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-4 py-3 flex-lg-row flex-column">
+                    <div class="col">
+                        <div class="card h-100 bota2">
+                            <img src="../media/productos/botas_2.jpg" alt="Imagen Botas" class="card-img-top">
+                            <div class="card-body">
+                             <h4 class="card-title fs-3">Harvey</h4>
+                            <p class="card-text fs-5">$10.500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 zapato1">
+                            <img src="../media/productos/zapatos_1.jpg" alt="Imagen Zapatos" class="card-img-top">
+                            <div class="card-body">
+                             <h4 class="card-title fs-3">Frankie</h4>
+                            <p class="card-text fs-5">$9.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 zapato2">
+                            <img src="../media/productos/zapatos_2.png" alt="Imagen Zapatos" class="card-img-top">
+                            <div class="card-body">
+                             <h4 class="card-title fs-3">Ciro</h4>
+                            <p class="card-text fs-5">$10.500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="p-4 my-3 fs-3">Más productos</button>
+                </div>
+                <!-- <img src="../media/productos/borcego_1.jpg" alt="Imagen Borcegos">
                 <h4 class="nombre_producto">Carrie</h4>
                 <h4 class="precio_producto">$9.500</h4>
                 <img src="../media/productos/borcego_2.jpg" alt="Imagen Borcegos">
                 <h4 class="nombre_producto">Annie</h4>
-                <h4 class="precio_producto">$8.500</h4>
-                <img src="../media/productos/borcego_3.jpg" alt="Imagen Borcegos">
+                <h4 class="precio_producto">$8.500</h4> -->
+                <!-- <img src="../media/productos/borcego_3.jpg" alt="Imagen Borcegos">
                 <h4 class="nombre_producto">Sarah</h4>
                 <h4 class="precio_producto">$11.000</h4>
                 <img src="../media/productos/borcego_4.jpg" alt="Imagen Borcegos">
@@ -145,16 +210,16 @@
                 <h4 class="precio_producto">$9.500</h4>
                 <img src="../media/productos/borcego_5.jpg" alt="Imagen Borcegos">
                 <h4 class="nombre_producto">Crystal</h4>
-                <h4 class="precio_producto">$10.500</h4>
-            </div>
-            <div class="fotos_botas" id="fotos_botas">
-                <img src="../media/productos/botas_1.jpg" alt="Imagen Botas">
+                <h4 class="precio_producto">$10.500</h4> -->
+            <!-- </div> -->
+            <!-- <div class="fotos_botas d-flex" id="fotos_botas"> -->
+                <!-- <img src="../media/productos/botas_1.jpg" alt="Imagen Botas">
                 <h4 class="nombre_producto">Scott</h4>
                 <h4 class="precio_producto">$9.500</h4>
                 <img src="../media/productos/botas_2.jpg" alt="Imagen Botas">
                 <h4 class="nombre_producto">Harvey</h4>
-                <h4 class="precio_producto">$10.500</h4>
-                <img src="../media/productos/botas_3.jpg" alt="Imagen Botas">
+                <h4 class="precio_producto">$10.500</h4> -->
+                <!-- <img src="../media/productos/botas_3.jpg" alt="Imagen Botas">
                 <h4 class="nombre_producto">Tyler</h4>
                 <h4 class="precio_producto">$9.000</h4>
                 <img src="../media/productos/botas_4.jpg" alt="Imagen Botas">
@@ -162,16 +227,16 @@
                 <h4 class="precio_producto">$9.500</h4>
                 <img src="../media/productos/botas_5.jpg" alt="Imagen Botas">
                 <h4 class="nombre_producto">Holly</h4>
-                <h4 class="precio_producto">$12.500</h4>
-            </div>
-            <div class="fotos_zapatos" id="fotos_zapatos">
-                <img src="../media/productos/zapatos_1.jpg" alt="Imagen Zapatos">
+                <h4 class="precio_producto">$12.500</h4> -->
+            <!-- </div>
+            <div class="fotos_zapatos d-flex" id="fotos_zapatos"> -->
+                <!-- <img src="../media/productos/zapatos_1.jpg" alt="Imagen Zapatos">
                 <h4 class="nombre_producto">Frankie</h4>
                 <h4 class="precio_producto">$9.000</h4>
                 <img src="../media/productos/zapatos_2.png" alt="Imagen Zapatos">
                 <h4 class="nombre_producto">Ciro</h4>
-                <h4 class="precio_producto">$10.500</h4>
-                <img src="../media/productos/zapatos_3.jpg" alt="Imagen Zapatos">
+                <h4 class="precio_producto">$10.500</h4> -->
+                <!-- <img src="../media/productos/zapatos_3.jpg" alt="Imagen Zapatos">
                 <h4 class="nombre_producto">Frida</h4>
                 <h4 class="precio_producto">$11.000</h4>
                 <img src="../media/productos/zapatos_4.jpg" alt="Imagen Zapatos">
@@ -179,10 +244,9 @@
                 <h4 class="precio_producto">$9.500</h4>
                 <img src="../media/productos/zapatos_5.jpg" alt="Imagen Zapatos">
                 <h4 class="nombre_producto">Malba</h4>
-                <h4 class="precio_producto">$9.000</h4>
-            </div>
-            </section>
-            <button>Más productos</button>
+                <h4 class="precio_producto">$9.000</h4> -->
+            <!-- </div> -->
+        </section>
             <img class= "flyer_home" src="../media/flyers/flyer_home_2.png" alt="Imagen de productos">
     </main>
     <div class="linea_separadora">

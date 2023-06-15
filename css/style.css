@@ -42,11 +42,11 @@ p{
 
 header{
     background-color: #6E6A7A;
-    height: 135px;
     display: flex;
     flex-direction: column;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 header section{
@@ -171,7 +171,7 @@ main h1{
     justify-content: start;    
 }
 
-main section{
+main .ofertas{
     display: flex;
     justify-content: space-evenly;
 }
@@ -325,6 +325,22 @@ main button{
     color: black;
     background-color:white;
     border-radius: 4px;
+}
+
+.zapato1 img{
+    margin-top: 30%;
+}
+
+.zapato1 div {
+    margin-top: 20%;
+}
+
+.bota2 div{
+ margin-top: 5%;
+}
+
+.zapato2 div{
+    padding-top: 0;
 }
 
 /*Estilos page ofertas*/
