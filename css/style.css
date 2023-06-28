@@ -8,8 +8,8 @@ font-style: normal;*/
 
 /*Color
 #6E6A7A Gris
-#FFFFFF Blanco
-#000000 Negro*/
+#F0F0F0 Blanco
+#0A0A0A Negro*/
 
 *{
     padding: 0;
@@ -49,35 +49,35 @@ header{
     z-index: 10;
 }
 
-header section{
+/* header section{
     height: 80%;
     display: flex;
     align-items: center;
-}
+} */
 
-header section img{
+/* header section img{
     width: 50px ;
-}
+} */
 
-header nav{
+/* header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
     width: 70%;
-}
+} */
 
 header nav img{
     width: 20px;
 }
 
-header nav ul{
+/* header nav ul{
     display: flex;
     justify-content: space-around;
    
-}
+} */
 
-.menu_1{
+/* .menu_1{
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -87,7 +87,7 @@ header nav ul{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
-}
+} */
 
 /* .anuncio_envio_gratis{
     color: white;
@@ -107,7 +107,6 @@ header nav ul{
 .logo img{
     width: 100%;
     margin: 0 10px;
-
 }
 
 .nav_ul{
@@ -119,27 +118,22 @@ header ul{
     font-size: 2rem;
 }
 
-header a{
+/* header a{
     text-decoration: none;
     color: black;
-}
+} */
 
-.imagen_buscar{
+/* .imagen_buscar{
     margin-top: 5px;
     margin-left: 5px;
-}
+} */
 
 .boton_buscar{
-    width: 12px;
-    border-radius: 4px;
-    border-style: none;
+    width: 15px;
 }
 
 header input{
-    height: 17px;
-    border-radius: 4px;
-    border-style: none;
-    
+    height: 17px;    
 }
 
 .perfil{
@@ -176,20 +170,23 @@ main .ofertas{
     justify-content: space-evenly;
 }
 
-section img{
+.ofertas img{
     width: 250px;
 }
 
 main .anuncio_envio_gratis {
+    color: white;
+    text-align: center;
+    background-color: black; 
+    font-size: 1.2rem;
+    height: 20px;
+    font-weight: 100;
+    font-stretch: extra-expanded; 
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .flyer_home_2{
-    width: 100%;
-}
-
-.flyer_ofertas{
     width: 100%;
 }
 
@@ -236,12 +233,6 @@ footer img{
     
 }
 
-footer ul{
-    font-size: 1.5rem;
-    list-style-type: none;
-    font-weight: 700;
-}
-
 footer a {
     text-decoration: none;
     color: black;
@@ -256,7 +247,9 @@ footer nav ul{
     margin-top: 25px;
     display: flex;
     justify-content: space-evenly;
-
+    font-size: 1.5rem;
+    list-style-type: none;
+    font-weight: 700;
 }
 
 footer section{
@@ -271,7 +264,7 @@ footer section{
 .whatsapp{
     display: flex;
     align-items: center;
-    width: 11%;
+    width: 12%;
     justify-content: space-around;
 }
 
@@ -301,31 +294,31 @@ nav img{
     color: black;
 }
 
-.productos_fotos{
+/* .productos_fotos{
     width: 30px;
     height: auto;
-}
+} */
 
 .filtros_orden{
     font-size: 1.5rem;
     width: 20px;
 }
 
-.nombre_producto{
+/* .nombre_producto{
     font-size: 2rem;
     font-weight: 900;
-}
+} */
 
-.precio_producto{
+/* .precio_producto{
     font-size: 1.5rem;
     font-style: italic;
-}
+} */
 
-main button{
+/* main button{
     color: black;
     background-color:white;
     border-radius: 4px;
-}
+} */
 
 .zapato1 img{
     margin-top: 30%;
@@ -345,6 +338,13 @@ main button{
 
 /*Estilos page ofertas*/
 
+.flyer_ofertas{
+    width: 100%;
+}
+
+.grid_ofertas img{
+    width: 100%;
+}
 .grid_ofertas{
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
@@ -352,10 +352,10 @@ main button{
     grid-template-areas:
     "flyer1 img1 img2 img3"
     "flyer1 img1 img2 img3"
-    "flyer1 precio1 precio2 precio3"
+    "flyer1 img1 img2 img3"
     "flyer2 img4 img5 img6"
     "flyer2 img4 img5 img6"
-    "flyer2 precio4 precio5 precio6";
+    "flyer2 img4 img5 img6";
 }
 
 .grid_ofertas_flyer1{
@@ -366,19 +366,43 @@ main button{
     grid-area: flyer2;
 }
 
-.grid_ofertas_img1{
+.grid_ofertas_1{
     grid-area: img1;
 }
 
-.grid_ofertas_img2{
+.grid_ofertas_2{
+    grid-area:img2;
+}
+
+.grid_ofertas_3{
+    grid-area:img3;
+}
+
+.grid_ofertas_4{
+    grid-area:img4;
+}
+
+.grid_ofertas_5{
+    grid-area:img5;
+}
+
+.grid_ofertas_6{
+    grid-area:img6;
+}
+
+/* .grid_ofertas_img1{
+    grid-area: img1;
+} */
+
+/* .grid_ofertas_img2{
     grid-area: img2;
 }
 
 .grid_ofertas_img3{
     grid-area: img3;
-}
+} */
 
-.grid_ofertas_img4{
+/* .grid_ofertas_img4{
     grid-area: img4;
 }
 
@@ -388,21 +412,21 @@ main button{
 
 .grid_ofertas_img6{
     grid-area: img6;
-}
+} */
 
-.grid_ofertas_precio1{
+/* .grid_ofertas_precio1{
     grid-area: precio1;
-}
+} */
 
-.grid_ofertas_precio2{
+/* .grid_ofertas_precio2{
     grid-area: precio2;
 }
 
 .grid_ofertas_precio3{
     grid-area: precio3;
-}
+} */
 
-.grid_ofertas_precio4{
+/* .grid_ofertas_precio4{
     grid-area: precio4;
 }
 
@@ -412,25 +436,119 @@ main button{
 
 .grid_ofertas_precio6{
     grid-area: precio6;
+} */
+
+/* Media querys */
+
+@media only screen and (max-width: 780px) {
+    .grid_ofertas {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
+@media only screen and (max-width: 1024px) {
+    .grid_ofertas {
+        grid-template-rows: repeat(6, 100px);
+    }
+    .mas_ofertas{
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 1025) {
+    .mas_ofertas{
+        margin-top: 0;
+    }
+}
 
 /*Estilo page preguntas frecuentes*/
+
+.preguntas_nav a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* .preguntas_texto{
+    flex-direction: row;
+} */
+
+.preguntas_respuestas{
+    padding-bottom: 30px;
+}
 
 .preguntas{
     font-size: 2rem;
     font-weight: 800;
+    padding-bottom: 5px;
+    padding-top: 12px;
+    padding-left: 10px;
 }
 
 .respuestas{
     font-size: 1.7rem;
     font-style: italic;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width:1024px){
+.preguntas_nav{
+    flex-direction: column;
+}
+.contacto_nav {
+    flex-direction: column;
+}
+.ofertas_nav {
+    flex-direction: column;
+}
+.productos_nav {
+    flex-direction: column;
+}
 }
 
 /*Estilo page contacto*/
 
 .imagen_publicidad{
-    width:40%;
+    display: flex;
+    justify-content: center;
+    background:white;
+}
+
+.imagen_publicidad img{
+    width:35%;
+    border-radius: 4px;
+}
+
+.contacto_nav a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto div{
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 5px 0;
+}
+.contacto form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 25px;
+    font-size: 1.5rem;
+}
+
+.contacto form input{
+    height: 30px;
 }
 
 .contacto img{
@@ -445,9 +563,12 @@ main button{
 }
 
 .form_contacto .submit_contacto {
+    align-self: center;
+    width: 25%;
     color: black;
     background-color:white;
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 /*Estilos páginas en construcción*/

@@ -1,0 +1,384 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/*Estilos páginas en construcción*/
+.en_construccion {
+  height: 500px;
+  text-align: center;
+  margin: 25%;
+  font-size: x-large;
+}
+
+.en_construccion img {
+  width: 50%;
+}
+
+.linea_separadora {
+  background-color: #0A0A0A;
+  height: 1px;
+}
+
+/*
+Estilos header
+*/
+header {
+  background-color: #6E6A7A;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header nav img {
+  width: 20px;
+}
+header nav div .logo {
+  width: 200px;
+}
+header nav div .logo img {
+  width: 100%;
+  margin: 0 10px;
+}
+header nav div div .nav_ul {
+  width: 15%;
+}
+header nav div div .nav_ul .perfil, header nav div div .nav_ul .carrito, header nav div div .nav_ul .favoritos {
+  margin-top: 5px;
+}
+header nav div div form .boton_buscar {
+  width: 15px;
+}
+header ul {
+  list-style-type: none;
+  font-size: 2rem;
+}
+header input {
+  height: 17px;
+}
+
+/*
+Estilos footer
+*/
+footer h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+footer .redes {
+  margin-top: 15px;
+  margin-left: 47%;
+  justify-content: space-between;
+  display: flex;
+  width: 8%;
+}
+footer .redes a {
+  text-decoration: none;
+  color: black;
+}
+footer .redes img {
+  width: 30px;
+}
+footer nav ul {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  list-style-type: none;
+  font-weight: 700;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer section {
+  margin-top: 30px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+footer section .whatsapp {
+  display: flex;
+  align-items: center;
+  width: 12%;
+  justify-content: space-around;
+}
+footer section .whatsapp img {
+  width: 30px;
+}
+footer section .whatsapp a {
+  text-decoration: none;
+  color: black;
+}
+footer section .email {
+  display: flex;
+  align-items: center;
+  width: 18%;
+  justify-content: space-around;
+}
+footer section .email img {
+  width: 30px;
+}
+footer section .email a {
+  text-decoration: none;
+  color: black;
+}
+
+/*
+Estilos de index
+*/
+main .flyer_home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .flyer_home img {
+  height: 400px;
+}
+main h1 {
+  display: flex;
+  justify-content: start;
+}
+main .ofertas {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .ofertas img {
+  width: 250px;
+}
+main .anuncio_envio_gratis {
+  color: white;
+  text-align: center;
+  background-color: black;
+  font-size: 1.2rem;
+  height: 20px;
+  font-weight: 100;
+  font-stretch: extra-expanded;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .flyer_home_2 {
+  width: 100%;
+}
+main .condiciones {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+main .condiciones div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .condiciones div img {
+  width: 70px;
+  margin-left: 10px;
+}
+main .condiciones div p {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*
+Estilos de la página de contacto
+*/
+main .imagen_publicidad {
+  display: flex;
+  justify-content: center;
+  background: #F0F0F0;
+}
+main .imagen_publicidad img {
+  width: 35%;
+  border-radius: 4px;
+}
+main .contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contacto div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 5px 0;
+}
+main .contacto .form_contacto {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 25px;
+  font-size: 1.5rem;
+}
+main .contacto .form_contacto input {
+  height: 30px;
+}
+main .contacto .form_contacto .submit_contacto {
+  align-self: center;
+  width: 25%;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+main .contacto img {
+  width: 30px;
+}
+main .contacto a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/*
+estilos de página productos
+*/
+main nav img {
+  width: 30px;
+}
+main .productos_nav a, main .preguntas_nav a, main .ofertas_nav a, main .categorias a, main .contacto_nav a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+}
+main .filtros_orden {
+  font-size: 1.5rem;
+  width: 20px;
+}
+main section div div .bota2 div {
+  margin-top: 5%;
+}
+main section div div .zapato1 div {
+  margin-top: 20%;
+}
+main section div div .zapato1 img {
+  margin-top: 30%;
+}
+main section div div .zapato2 div {
+  padding-top: 0;
+}
+
+/*
+Estilos de la página de ofertas
+*/
+main .flyer_ofertas {
+  width: 100%;
+}
+main .grid_ofertas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 150px);
+  grid-template-areas: "flyer1 img1 img2 img3" "flyer1 img1 img2 img3" "flyer1 img1 img2 img3" "flyer2 img4 img5 img6" "flyer2 img4 img5 img6" "flyer2 img4 img5 img6";
+}
+main .grid_ofertas img {
+  width: 100%;
+}
+main .grid_ofertas_flyer1 {
+  grid-area: flyer1;
+}
+main .grid_ofertas_flyer2 {
+  grid-area: flyer2;
+}
+main .grid_ofertas_1 {
+  grid-area: img1;
+}
+main .grid_ofertas_2 {
+  grid-area: img2;
+}
+main .grid_ofertas_3 {
+  grid-area: img3;
+}
+main .grid_ofertas_4 {
+  grid-area: img4;
+}
+main .grid_ofertas_5 {
+  grid-area: img5;
+}
+main .grid_ofertas_6 {
+  grid-area: img6;
+}
+
+/*
+Estilo de página preguntas frecuentes
+*/
+main .preguntas_respuestas {
+  padding-bottom: 30px;
+}
+main .preguntas_respuestas .preguntas {
+  font-size: 2rem;
+  font-weight: 800;
+}
+main .preguntas_respuestas .respuestas {
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+/*
+Media query css
+*/
+@media only screen and (max-width: 780px) {
+  .grid_ofertas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .grid_ofertas {
+    grid-template-rows: repeat(6, 100px);
+  }
+  .mas_ofertas {
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 1025) {
+  .mas_ofertas {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .preguntas_nav {
+    flex-direction: column;
+  }
+  .contacto_nav {
+    flex-direction: column;
+  }
+  .ofertas_nav {
+    flex-direction: column;
+  }
+  .productos_nav, main .contacto_nav, main .categorias, main .ofertas_nav, main .preguntas_nav {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

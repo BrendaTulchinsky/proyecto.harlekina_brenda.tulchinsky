@@ -1,0 +1,23 @@
+// Sass de página preguntas frecuentes
+
+/*
+Estilo de página preguntas frecuentes
+*/
+
+main{
+    .preguntas_nav{
+        @extend .productos_nav
+    }
+    .preguntas_respuestas{
+        padding-bottom: 30px;
+        .preguntas{
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        
+        .respuestas{
+            font-size: 1.7rem;
+            font-style: italic;
+        }
+    }
+}

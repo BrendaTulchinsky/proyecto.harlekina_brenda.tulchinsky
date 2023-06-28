@@ -1,0 +1,60 @@
+//Estilos Sass
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+@import "partials/variables";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family:$tipografia;
+    font-size:62.5%;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+//estilos página en construcción
+
+/*Estilos páginas en construcción*/
+.en_construccion{
+    height: 500px;
+    text-align: center;
+    margin: 25%;
+    font-size: x-large;
+}
+
+.en_construccion img{
+    width: 50%;
+}
+
+// linea separadora
+
+.linea_separadora{
+    background-color: $negro;
+    height: 1px;
+}
+
+
+@import "partials/header_footer";
+@import "partials/index";
+@import "partials/contacto";
+@import "partials/productos";
+@import "partials/ofertas";
+@import "partials/preguntas_frecuentes";
+@import "partials/media_query.scss";

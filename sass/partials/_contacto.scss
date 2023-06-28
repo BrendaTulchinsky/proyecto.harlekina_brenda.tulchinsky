@@ -1,0 +1,59 @@
+//Sass de la página de contacto
+
+/*
+Estilos de la página de contacto
+*/
+
+main{
+    .imagen_publicidad{
+        display: flex;
+        justify-content: center;
+        background: $blanco;
+        img{
+            width:35%;
+            border-radius: 4px;
+        }
+    }
+    .contacto_nav{
+        @extend .productos_nav;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            display:flex;
+            flex-direction: row;
+            gap: 5px;
+            margin: 5px 0;
+        }
+        .form_contacto{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 25px;
+            font-size: 1.5rem;
+            input{
+                height: 30px;
+            }
+            .submit_contacto {
+                align-self: center;
+                width: 25%;
+                color: black;
+                background-color:white;
+                border-radius: 4px;
+                margin-bottom: 30px;
+            }
+        }
+        img{
+            width: 30px;
+        }
+        a{
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        
+    }
+}

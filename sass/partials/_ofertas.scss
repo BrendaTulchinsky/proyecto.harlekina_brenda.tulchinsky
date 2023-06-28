@@ -1,0 +1,61 @@
+// Sass de página ofertas
+
+/*
+Estilos de la página de ofertas
+*/
+
+main{
+    .flyer_ofertas{
+        width: 100%;
+    }
+    .ofertas_nav{
+        @extend .productos_nav;
+    }
+    .grid_ofertas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-rows: repeat(6, 150px);
+        grid-template-areas:
+        "flyer1 img1 img2 img3"
+        "flyer1 img1 img2 img3"
+        "flyer1 img1 img2 img3"
+        "flyer2 img4 img5 img6"
+        "flyer2 img4 img5 img6"
+        "flyer2 img4 img5 img6";
+        img{
+            width: 100%;
+        }
+    }
+    .grid_ofertas_flyer1{
+        grid-area: flyer1;
+    }
+    
+    .grid_ofertas_flyer2{
+        grid-area: flyer2;
+    }
+    
+    .grid_ofertas_1{
+        grid-area: img1;
+    }
+    
+    .grid_ofertas_2{
+        grid-area:img2;
+    }
+    
+    .grid_ofertas_3{
+        grid-area:img3;
+    }
+    
+    .grid_ofertas_4{
+        grid-area:img4;
+    }
+    
+    .grid_ofertas_5{
+        grid-area:img5;
+    }
+    
+    .grid_ofertas_6{
+        grid-area:img6;
+    }
+
+}

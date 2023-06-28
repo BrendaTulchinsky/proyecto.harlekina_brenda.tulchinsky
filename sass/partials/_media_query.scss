@@ -1,0 +1,45 @@
+// Sass de media query
+
+/*
+Media query css
+*/
+
+
+@media only screen and (max-width: 780px) {
+    .grid_ofertas {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid_ofertas {
+        grid-template-rows: repeat(6, 100px);
+    }
+    .mas_ofertas{
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 1025) {
+    .mas_ofertas{
+        margin-top: 0;
+    }
+}
+
+
+@media only screen and (max-width:1024px){
+    .preguntas_nav{
+        flex-direction: column;
+    }
+    .contacto_nav {
+        flex-direction: column;
+    }
+    .ofertas_nav {
+        flex-direction: column;
+    }
+    .productos_nav {
+        flex-direction: column;
+    }
+    }

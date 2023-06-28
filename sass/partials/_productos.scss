@@ -1,0 +1,56 @@
+//Sass de la página productos
+
+/*
+estilos de página productos
+*/
+
+main{
+    nav {
+        img{
+            width: 30px;
+        }  
+    }
+    .productos_nav{
+        a{
+            font-size: 3rem;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .categorias{
+        @extend .productos_nav;
+    }
+    .filtros_orden{
+        font-size: 1.5rem;
+        width: 20px;
+    }
+    section{
+        div{
+            div{
+                .bota2{
+                    div{
+                        margin-top: 5%;
+                       }
+                }
+            }
+            div{
+                .zapato1{
+                    div {
+                        margin-top: 20%;
+                    }
+                    img{
+                        margin-top: 30%;
+                    }
+                }
+            }
+            div{
+                .zapato2{
+                    div{
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
