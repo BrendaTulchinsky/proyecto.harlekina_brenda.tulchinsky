@@ -119,16 +119,17 @@ footer section {
   height: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
 }
 footer section .whatsapp {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   width: 12%;
-  justify-content: space-around;
 }
 footer section .whatsapp img {
   width: 30px;
@@ -139,9 +140,10 @@ footer section .whatsapp a {
 }
 footer section .email {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   width: 18%;
-  justify-content: space-around;
 }
 footer section .email img {
   width: 30px;
@@ -271,6 +273,9 @@ main .productos_nav a, main .preguntas_nav a, main .ofertas_nav a, main .categor
   text-decoration: none;
   color: black;
 }
+main .categorias img {
+  width: 50%;
+}
 main .filtros_orden {
   font-size: 1.5rem;
   width: 20px;
@@ -377,6 +382,12 @@ Media query css
     flex-direction: column;
   }
   .productos_nav, main .contacto_nav, main .categorias, main .ofertas_nav, main .preguntas_nav {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  footer section div {
+    display: flex;
     flex-direction: column;
   }
 }

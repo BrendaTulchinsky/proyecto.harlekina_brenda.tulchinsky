@@ -19,6 +19,9 @@ main{
     }
     .categorias{
         @extend .productos_nav;
+        img{
+            width: 50%;
+        }
     }
     .filtros_orden{
         font-size: 1.5rem;

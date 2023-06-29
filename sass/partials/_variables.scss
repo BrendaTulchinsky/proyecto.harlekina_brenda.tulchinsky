@@ -2,3 +2,10 @@ $tipografia:'Nunito', sans-serif;
 $gris:#6E6A7A;
 $negro:#0A0A0A;
 $blanco: #F0F0F0;
+
+@mixin flex ($direccion,$justify,$align){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}
