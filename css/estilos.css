@@ -144,6 +144,7 @@ footer section .email {
   justify-content: space-around;
   align-items: center;
   width: 18%;
+  gap: 10px;
 }
 footer section .email img {
   width: 30px;
@@ -299,38 +300,8 @@ Estilos de la página de ofertas
 main .flyer_ofertas {
   width: 100%;
 }
-main .grid_ofertas {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 150px);
-  grid-template-areas: "flyer1 img1 img2 img3" "flyer1 img1 img2 img3" "flyer1 img1 img2 img3" "flyer2 img4 img5 img6" "flyer2 img4 img5 img6" "flyer2 img4 img5 img6";
-}
-main .grid_ofertas img {
-  width: 100%;
-}
-main .grid_ofertas_flyer1 {
-  grid-area: flyer1;
-}
-main .grid_ofertas_flyer2 {
-  grid-area: flyer2;
-}
-main .grid_ofertas_1 {
-  grid-area: img1;
-}
-main .grid_ofertas_2 {
-  grid-area: img2;
-}
-main .grid_ofertas_3 {
-  grid-area: img3;
-}
-main .grid_ofertas_4 {
-  grid-area: img4;
-}
-main .grid_ofertas_5 {
-  grid-area: img5;
-}
-main .grid_ofertas_6 {
-  grid-area: img6;
+main div .mas_ofertas {
+  margin-top: 30px;
 }
 
 /*
@@ -373,7 +344,7 @@ Media query css
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1060px) {
   footer nav ul {
     flex-wrap: wrap;
     gap: 20px;
@@ -403,31 +374,6 @@ Media query css
   .ofertas {
     flex-wrap: wrap;
     gap: 10px;
-  }
-}
-@media only screen and (max-width: 780px) {
-  .grid_ofertas {
-    display: flex;
-    gap: 10px;
-  }
-  .grid_ofertas div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .grid_ofertas {
-    display: flex;
-    flex-direction: column;
-  }
-  .mas_ofertas {
-    margin-top: 25px;
-  }
-}
-@media only screen and (min-width: 1025) {
-  .mas_ofertas {
-    margin-top: 0;
   }
 }
 @media only screen and (max-width: 1024px) {

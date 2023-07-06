@@ -33,7 +33,7 @@ Media query css
 }
 
 
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:1060px){
     footer nav ul{
         flex-wrap: wrap;
         gap: 20px;
@@ -74,36 +74,6 @@ Media query css
 }
 
 //media query de la pagina ofertas
-
-
-@media only screen and (max-width: 780px) {
-    .grid_ofertas{
-        display: flex;
-      gap: 10px;
-   }
-.grid_ofertas div{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-   }
-}
-
-@media only screen and (max-width: 1024px) {
-       .grid_ofertas {
-       display: flex;
-       flex-direction: column;
-    }
-    .mas_ofertas{
-        margin-top: 25px;
-    }
-}
-
-
-@media only screen and (min-width: 1025) {
-    .mas_ofertas{
-        margin-top: 0;
-    }
-}
 
 
 //media query para todas las paginas
