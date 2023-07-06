@@ -162,7 +162,7 @@ main .flyer_home {
   justify-content: center;
 }
 main .flyer_home img {
-  height: 400px;
+  height: 380px;
 }
 main h1 {
   display: flex;
@@ -342,17 +342,75 @@ main .preguntas_respuestas {
 main .preguntas_respuestas .preguntas {
   font-size: 2rem;
   font-weight: 800;
+  margin-left: 15px;
 }
 main .preguntas_respuestas .respuestas {
   font-size: 1.7rem;
   font-style: italic;
+  margin-left: 20px;
 }
 
 /*
 Media query css
 */
 @media only screen and (max-width: 780px) {
+  main .flyer_home img {
+    height: 180px;
+  }
+  .ofertas {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .destacados {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  footer section div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  footer nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .redes {
+    gap: 15px;
+  }
+  footer section .whatsapp {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+  footer section .email {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .buscador {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  main .flyer_home img {
+    height: 240px;
+  }
+  .ofertas {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 780px) {
   .grid_ofertas {
+    display: flex;
+    gap: 10px;
+  }
+  .grid_ofertas div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -360,7 +418,8 @@ Media query css
 }
 @media only screen and (max-width: 1024px) {
   .grid_ofertas {
-    grid-template-rows: repeat(6, 100px);
+    display: flex;
+    flex-direction: column;
   }
   .mas_ofertas {
     margin-top: 25px;
@@ -382,12 +441,6 @@ Media query css
     flex-direction: column;
   }
   .productos_nav, main .contacto_nav, main .categorias, main .ofertas_nav, main .preguntas_nav {
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  footer section div {
-    display: flex;
     flex-direction: column;
   }
 }
