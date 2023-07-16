@@ -92,3 +92,26 @@ Media query css
         flex-direction: column;
     }
 }
+
+//media query 404
+
+@media only screen and (max-width:1040px){
+    .error_404 a{
+        padding-bottom: 15%;
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .error_404 a{
+        padding-bottom: 20%;
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width:780px){
+    .error_404 a{
+        font-size: small;
+        padding-bottom: 25%;
+    }
+}
