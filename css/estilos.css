@@ -329,7 +329,7 @@ main .preguntas_respuestas .respuestas {
 .error_404 {
   width: 100%;
   height: 600px;
-  background-image: url(../../media/404.png);
+  background-image: url(../media/404.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
