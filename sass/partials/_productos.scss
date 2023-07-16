@@ -22,6 +22,13 @@ main{
         img{
             width: 50%;
         }
+        div{
+            .efecto:hover{
+                background-color: $gris;
+                border-radius: 12px;
+                border: solid black 2px;
+            }
+        }
     }
     .filtros_orden{
         font-size: 1.5rem;

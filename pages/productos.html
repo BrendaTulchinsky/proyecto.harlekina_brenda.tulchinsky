@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <meta name="description" content="Pasa por nuestra sección de productos para ver todo lo que tenemos disponible para vos, borcegos, botitas y zapatos de muy buena calidad y al mejor precio. Si puedes soñarlo, puedes tenerlo">
+    <title>Productos - Harlekina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -32,24 +39,24 @@
                   </li>
                 </ul>
                 <form class="buscador d-flex align-items-center justify-content-start " role="search">
-                    <img src="../media/iconos/buscar_icono.png" alt="Imagen de lupa" >
+                    <img src="../media/iconos/buscar_icono.png" alt="Icono de lupa" >
                     <input class="form-control me-2 d-flex align-items-center ms-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn" type="submit" ><img src="../media/iconos/flecha.buscar_icono.png" alt="Aceptar búsqueda" class="boton_buscar"></button>
+                    <button class="btn" type="submit" ><img src="../media/iconos/flecha.buscar_icono.png" alt="Icono de flecha apuntando a la derecha" class="boton_buscar"></button>
                 </form>
                 <ul class="navbar-nav mb-2 mb-lg-0 d-flex nav_ul d-flex justify-content-evenly flex-row">
                     <li>
                         <a href="../404.html" class="d-flex align-items-center">
-                            <img src="../media/iconos/usuario_icono.png" alt="Ingresar con tu usuario" class="perfil">
+                            <img src="../media/iconos/usuario_icono.png" alt="Icono de usuario" class="perfil">
                         </a>
                     </li>
                     <li>
                         <a href="../404.html" class="d-flex align-items-center">
-                            <img src="../media/iconos/favorito_icono.png" alt="Mis favoritos" class="favoritos">
+                            <img src="../media/iconos/favorito_icono.png" alt="Icono de corazón, favoritos" class="favoritos">
                         </a>
                     </li>
                     <li>
                         <a href="../404.html" class="d-flex align-items-center">
-                            <img src="../media/iconos/carrito.compras_icono.png" alt="Ingresar a tu carrito de compras" class="carrito">
+                            <img src="../media/iconos/carrito.compras_icono.png" alt="Icono de carrito de compras" class="carrito">
                         </a>
                     </li>
                 </ul>
@@ -105,32 +112,32 @@
     <main>
             <nav class="productos_nav d-flex w-25 h-50 ms-4 pt-5">
                 <a href="../index.html">Inicio</a>
-                <img src="../media/iconos/flecha.buscar_icono.png" alt="">
+                <img src="../media/iconos/flecha.buscar_icono.png" alt="Icono de flecha apuntando hacia la derecha">
                 <a href="productos.html">Productos</a>
             </nav>
             <div class="categorias d-flex mt-5 mb-5 flex-lg-row flex-column">
-                <div class="d-flex flex-column text-center ">
-                    <a href="#fotos_botas"><img src="../media/categorias/botas_icono.png" alt="Imagen de categoría botas"></a>
+                <div class="d-flex flex-column text-center">
+                    <a href="#fotos_botas"><img src="../media/categorias/botas_icono.png" class="efecto" alt="Imagen de categoría botas"></a>
                     <a href="#fotos_botas">BOTAS</a>
                 </div>
                 <div class="d-flex flex-column text-center">
-                    <a href="#fotos_borcegos"><img src="../media/categorias/borcegos_icono.png" alt="Imagen de categoría borcegos"></a>
+                    <a href="#fotos_borcegos"><img src="../media/categorias/borcegos_icono.png" class="efecto" alt="Imagen de categoría borcegos"></a>
                     <a href="#fotos_borcegos">BORCEGOS</a>
                 </div>
                 <div class="d-flex flex-column text-center">
-                    <a href="#fotos_zapatos"><img src="../media/categorias/zapatos_icono.png" alt="Imagen de categoría zapatos"></a>
+                    <a href="#fotos_zapatos"><img src="../media/categorias/zapatos_icono.png" class="efecto" alt="Imagen de categoría zapatos"></a>
                     <a href="#fotos_zapatos">ZAPATOS</a>
                 </div>
             </div>
-            <h1 class="d-flex w-25 h-50 ms-4 pt-5" >Productos</h1>
+            <h1 class="d-flex w-25 h-50 ms-4 pt-5 animate__animated animate__fadeInLeft animate__delay-0.5" >Productos</h1>
             <nav class="filtros_orden d-flex justify-content-between w-100">
                 <div class="d-flex px-5 align-items-center gap-3" >
                     <img src="../media/iconos/ordenar_icono.png" alt="Icono de ordenar" class="object-fit-contain">
-                    <h3>ORDENAR</h3>
+                    <h2>ORDENAR</h2>
                 </div>
                 <div class="d-flex px-5 align-items-center gap-3">
                     <img src="../media/iconos/filtrar_icono.png" alt="Icono de filtros" class="object-fit-contain">
-                    <h3>FILTROS</h3>
+                    <h2>FILTROS</h2>
                 </div>
             </nav>
             <section class="container text-center gap-4">
@@ -138,27 +145,27 @@
                 <div class="row gap-4 py-3 flex-lg-row flex-column">
                     <div class="col">
                         <div class="card ">
-                            <img src="../media/productos/borcego_1.jpg" class="card-img-top" alt="Imagen Borcegos">
+                            <img src="../media/productos/borcego_1.jpg" class="card-img-top" alt="Imagen de borcegos media caña de cuero sintetico y peluche color negro con cordones">
                             <div class="card-body">
-                             <h4 class="card-title fs-3">Carrie</h4>
+                             <h3 class="card-title fs-3">Carrie</h3>
                             <p class="card-text fs-5">$9.500</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100 ">
-                            <img src="../media/productos/borcego_2.jpg" alt="Imagen Borcegos" class="card-img-top">
+                            <img src="../media/productos/borcego_2.jpg" alt="Imagen de borcego de caña alta cuero sintetico de color negro con cordones y bolsito" class="card-img-top">
                             <div class="card-body fs-3">
-                             <h4 class="card-title">Annie</h4>
+                             <h3 class="card-title">Annie</h3>
                             <p class="card-text fs-5">$8.500</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100 ">
-                            <img src="../media/productos/botas_1.jpg" alt="Imagen Botas" class="card-img-top">
+                            <img src="../media/productos/botas_1.jpg" alt="Imagen de bota caña baja de cuero con taco" class="card-img-top">
                             <div class="card-body">
-                             <h4 class="card-title fs-3">Scott</h4>
+                             <h3 class="card-title fs-3">Scott</h3>
                             <p class="card-text fs-5">$9.500</p>
                             </div>
                         </div>
@@ -167,27 +174,27 @@
                 <div class="row gap-4 py-3 flex-lg-row flex-column">
                     <div class="col">
                         <div class="bota2 card h-100">
-                            <img src="../media/productos/botas_2.jpg" alt="Imagen Botas" class="card-img-top">
+                            <img src="../media/productos/botas_2.jpg" alt="Imagen de bota media caña de cuero sintetico negro con piedritas atras" class="card-img-top">
                             <div class="card-body">
-                             <h4 class="card-title fs-3">Harvey</h4>
+                             <h3 class="card-title fs-3">Harvey</h3>
                             <p class="card-text fs-5">$10.500</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="zapato1 card h-100">
-                            <img src="../media/productos/zapatos_1.jpg" alt="Imagen Zapatos" class="card-img-top">
+                            <img src="../media/productos/zapatos_1.jpg" alt="Imagen de zapato de cuero negro con base baja de madera" class="card-img-top">
                             <div class="card-body">
-                             <h4 class="card-title fs-3">Frankie</h4>
+                             <h3 class="card-title fs-3">Frankie</h3>
                             <p class="card-text fs-5">$9.000</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="zapato2 card h-100">
-                            <img src="../media/productos/zapatos_2.png" alt="Imagen Zapatos" class="card-img-top">
+                            <img src="../media/productos/zapatos_2.png" alt="Imagen de zapato de cuero negro con base baja de madera y lengüeta animal print" class="card-img-top">
                             <div class="card-body">
-                             <h4 class="card-title fs-3">Ciro</h4>
+                             <h3 class="card-title fs-3">Ciro</h3>
                             <p class="card-text fs-5">$10.500</p>
                             </div>
                         </div>
@@ -247,7 +254,7 @@
                 <h4 class="precio_producto">$9.000</h4> -->
             <!-- </div> -->
             </section>
-            <img class= "flyer_home" src="../media/flyers/flyer_home_2.png" alt="Imagen de productos">
+            <img class= "flyer_home" src="../media/flyers/flyer_home_2.png" alt="Imagen publicitaria de Harlekina 2x1 y 3 cuotas sin interes">
     </main>
     <div class="linea_separadora">
     </div>
@@ -256,7 +263,7 @@
             SI PUEDES SOÑARLO, PUEDES TENERLO...
         </h2>
         <div class="redes">
-            <a href="https://m.facebook.com/profile.php?id=100091958341353"><img src="../media/iconos/facebook_icono.png" alt="Logo Instagram"></a>
+            <a href="https://m.facebook.com/profile.php?id=100091958341353"><img src="../media/iconos/facebook_icono.png" alt="Logo Facebook"></a>
             <a href="https://www.instagram.com/harlekina.calzado/"><img src="../media/iconos/instagram_icono.png" alt="Logo Instagram"></a>
         </div>
         <nav>
@@ -286,11 +293,11 @@
         </nav>
         <section>
             <div class="whatsapp">
-                <img src="../media/iconos/whatsapp_icono.png" alt="Imagen de whatsapp">
+                <img src="../media/iconos/whatsapp_icono.png" alt="Icono de whatsapp">
                 <a href="https://wa.me/5491170810611">11 7081 0611</a>
             </div>
             <div class="email">    
-                <img src="../media/iconos/email_icono.png" alt="Imagen de mail">
+                <img src="../media/iconos/email_icono.png" alt="Icono de mail">
                 <a href="mailto:harlekinacalzado@gmail.com">harlekinacalzado@gmail.com</a>
             </div>
         </section>
